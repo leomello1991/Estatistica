@@ -1,0 +1,33 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <script>
+            //entrada de dados
+            let nomeDaVariavel;
+            let valores;
+            let separandoValores 
+            let vetorValores
+            let qualitativa
+            let quantitativa
+            let escolha
+            nomeDaVariavel = prompt("Digite o nome da variavel");
+            valores = prompt("digite os valores separando por ';' ")
+            escolha = prompt("escolha 1 para qualitativa, 2 para quantitativa")
+            if(escolha == "1"){
+            separandoValores = valores.split(/\s*;\s*/) //funçao para separar as variaveis   
+            }else if( escolha == "2" ){
+                separandoValores = valores.split(/\s*;\s*/).map(Number)
+                vetorValores = separandoValores.map(Number)
+            }
+            console.log(separandoValores)
+           
+
+
+        </script>
+
+    </head>
+    <body>
+        <p>Isto é um paragrafo</p>
+    </body>
+
+</html>
