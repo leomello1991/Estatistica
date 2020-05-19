@@ -24,7 +24,7 @@ class ValuesController {
 
     const op = tipoVariavel;
     if (op === 1) {
-      // frequencia quanlitativa nominal
+      // frequencia qualitativa nominal
 
       const frequencia = novoArrayString.reduce(function (todos, repeticao) {
         if (repeticao in todos) {
