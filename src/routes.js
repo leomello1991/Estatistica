@@ -13,6 +13,6 @@ routes.post('/variable', VariableController.store);
 
 routes.post('/values', ValuesController.store);
 
-routes.get('/', () => 'Hello leo');
+routes.get('/aaa', () => 'Hello leo');
 
 module.exports = routes;
