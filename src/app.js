@@ -42,4 +42,4 @@ class App {
   // }
 }
 
-module.exports = App().server;
+module.exports = new App().server;
