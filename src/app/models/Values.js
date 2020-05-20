@@ -1,5 +1,5 @@
-const { Model, Sequelize } = require('sequelize');
-
+const { Model } = require('sequelize');
+const Sequelize = require('sequelize');
 class Values extends Model {
   static init(sequelize) {
     super.init(
