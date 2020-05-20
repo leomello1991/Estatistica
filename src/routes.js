@@ -2,7 +2,7 @@ import { Router } from 'express';
 
 import UserController from './app/controllers/UserController';
 import VariableController from './app/controllers/VariableController';
-import ValuesController from "./app/controllers/ValuesController";
+import ValuesController from './app/controllers/ValuesController';
 
 // importa minhas configuraççoes
 
@@ -11,6 +11,8 @@ routes.post('/users', UserController.store);
 
 routes.post('/variable', VariableController.store);
 
-routes.post('/values', ValuesController.store)
+routes.post('/values', ValuesController.store);
+
+routes.get('/', () => 'Hello leo');
 
 export default routes;
