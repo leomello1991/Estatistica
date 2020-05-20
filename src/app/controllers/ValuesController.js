@@ -1,6 +1,6 @@
 /* eslint-disable no-plusplus */
-import Variable from '../models/Variable';
-import Values from '../models/Values';
+const Variable = require( '../models/Variable');
+const Values = require( '../models/Values');
 
 class ValuesController {
   async store(req, res) {
@@ -102,4 +102,4 @@ class ValuesController {
   }
 }
 
-export default new ValuesController();
+module.exports =  new ValuesController();

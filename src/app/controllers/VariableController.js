@@ -1,4 +1,4 @@
-import Variable from '../models/Variable';
+const Variable = require( '../models/Variable');
 
 class VariableController {
   async store(req, res) {
@@ -10,4 +10,4 @@ class VariableController {
     });
   }
 }
-export default new VariableController();
+module.exports = new VariableController();

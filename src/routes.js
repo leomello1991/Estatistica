@@ -1,8 +1,8 @@
-import { Router } from 'express';
+const { Router } = require( 'express');
 
-import UserController from './app/controllers/UserController';
-import VariableController from './app/controllers/VariableController';
-import ValuesController from './app/controllers/ValuesController';
+const UserController = require( './app/controllers/UserController');
+const VariableController = require( './app/controllers/VariableController');
+const ValuesController = require( './app/controllers/ValuesController');
 
 // importa minhas configuraççoes
 
@@ -15,4 +15,4 @@ routes.post('/values', ValuesController.store);
 
 routes.get('/', () => 'Hello leo');
 
-export default routes;
+module.exports = routes;

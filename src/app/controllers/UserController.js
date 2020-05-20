@@ -1,5 +1,5 @@
 
-import User from '../models/User';
+const User = require( '../models/User');
 
 class UserController {
   async store(req, res) {
@@ -20,4 +20,4 @@ class UserController {
     });
   }
 }
-export default new UserController();
+module.exports = new UserController();

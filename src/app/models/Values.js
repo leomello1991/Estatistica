@@ -1,4 +1,4 @@
-import Sequelize, { Model } from 'sequelize';
+const { Model, Sequelize } = require('sequelize');
 
 class Values extends Model {
   static init(sequelize) {
@@ -10,10 +10,11 @@ class Values extends Model {
         sequelize,
       }
     );
-    return this
+    return this;
   }
-  static associate(models){
-      this.belongsTo(models.Variable, {foreignKey: 'variable_id'})
+
+  static associate(models) {
+    this.belongsTo(models.Variable, { foreignKey: 'variable_id' });
   }
 }
-export default Values;
+module.exports = Values;

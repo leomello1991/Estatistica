@@ -1,4 +1,4 @@
-import Sequelize, { Model } from 'sequelize';
+const { Sequelize, Model } = require('sequelize');
 
 class Variable extends Model {
   static init(sequelize) {
@@ -12,4 +12,4 @@ class Variable extends Model {
     );
   }
 }
-export default Variable;
+module.exports = Variable;
